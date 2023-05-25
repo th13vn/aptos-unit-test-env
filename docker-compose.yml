@@ -1,0 +1,6 @@
+services:
+  aptos-test:
+    build: .
+    image: th13vn/aptos-test:latest
+    volumes:
+      - ./write-test-here/:/TestOnly/sources:ro
