@@ -8,6 +8,10 @@ case $arg1 in
         ;;
     run)
         docker-compose up > $rs && docker-compose rm -fsv
+        echo "See result: $rs"
+        ;;
+    clean)
+        rm -f output/result_*.out
         ;;
     *)
         echo "Wrong command"

@@ -12,4 +12,4 @@ WORKDIR /TestOnly
 COPY sample/ .
 RUN aptos move compile
 
-ENTRYPOINT ["/usr/local/bin/aptos", "move", "test"]
+ENTRYPOINT ["/usr/local/bin/aptos", "move", "test", "--dump"]
